@@ -6,7 +6,7 @@
 /*   By: sozdamar <sozdamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 10:27:43 by sozdamar          #+#    #+#             */
-/*   Updated: 2024/07/18 10:51:00 by sozdamar         ###   ########.fr       */
+/*   Updated: 2024/07/18 10:57:05 by sozdamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ typedef struct s_data
 	t_philo			*philo;
 }					t_data;
 
-//utilse
+//utils
 int				ft_atoi(const char *str);
 unsigned long	get_time(void);
 unsigned long	get_passed_time(unsigned long begin);
