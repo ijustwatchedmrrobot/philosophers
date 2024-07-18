@@ -6,7 +6,7 @@
 /*   By: sozdamar <sozdamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 10:27:43 by sozdamar          #+#    #+#             */
-/*   Updated: 2024/07/18 12:00:22 by sozdamar         ###   ########.fr       */
+/*   Updated: 2024/07/18 16:34:19 by sozdamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,5 +61,13 @@ void			philo_init(t_data *data);
 
 //check KO
 int				is_death(t_data *data);
+
+//routine OK
+int				thinking(t_data *data, int index);
+int				sleeping(t_data *data, int index);
+int				eating(t_data *data, int index);
+void			*routine(void* v_data);
+void			*only_one_philo(void *v_data);
+
 
 #endif
