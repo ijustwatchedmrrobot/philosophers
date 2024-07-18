@@ -6,7 +6,7 @@
 /*   By: sozdamar <sozdamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 10:35:03 by sozdamar          #+#    #+#             */
-/*   Updated: 2024/07/18 12:00:50 by sozdamar         ###   ########.fr       */
+/*   Updated: 2024/07/18 12:30:03 by sozdamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,5 @@ int	sleeping(t_data *data, int index)
 
 int	eating(t_data *data, int index)
 {
+	
 }
