@@ -6,7 +6,7 @@
 /*   By: sozdamar <sozdamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 10:27:43 by sozdamar          #+#    #+#             */
-/*   Updated: 2024/07/18 10:57:05 by sozdamar         ###   ########.fr       */
+/*   Updated: 2024/07/18 12:00:22 by sozdamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,10 @@ typedef struct s_philo
 typedef struct s_data
 {
 	int				num_of_philo;
-	int				time_to_die;
-	int				time_to_eat;
-	int				time_to_sleep;
-	int				num_must_eat;
+	int				die_time;
+	int				eat_time;
+	int				sleep_time;
+	int				num_eat;
 	int				is_philo_dead;
 	int				thread_index;
 	unsigned long	start_time;
@@ -43,12 +43,23 @@ typedef struct s_data
 	t_philo			*philo;
 }					t_data;
 
-//utils
+//utils OK
 int				ft_atoi(const char *str);
 unsigned long	get_time(void);
 unsigned long	get_passed_time(unsigned long begin);
 void			smart_sleep(int	time_pass);
 void			destroy(t_data *data);
 
+//print OK
+void			print_error(char *str);
+int				print_action(t_data *data, int index, char *str);
+
+//init OK
+int				get_data(t_data *data, char **av);
+void			mutex_init(t_data *data);
+void			philo_init(t_data *data);
+
+//check KO
+int				is_death(t_data *data);
 
 #endif
